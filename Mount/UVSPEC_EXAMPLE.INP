@@ -1,0 +1,22 @@
+atmosphere_file ../data/atmmod/afglss.dat # Location of atmospheric profile file.
+source solar ../data/solar_flux/atlas_plus_modtran
+#solar_file ../data/solar_flux/atlas_plus_modtran # Location of the extraterrestrial spectrum
+#ol_modify O3 300. DU # Scale ozone column to 300.0 DU
+day_of_year 170	# Correct for Earth-Sun distance
+albedo 0.2 # Surface albedo
+sza 60.0 # Solar zenith angle
+phi0 0.0 # Solar azimuth angle
+rte_solver disort # Radiative transfer equation solver
+deltam  on # Delta-M scaling on 
+number_of_streams  6 # Number of streams
+wavelength 400 440  # Wavelength range [nm]
+umu  -1.0 -0.5 -0.2 -0.1  # Output cosine of polar angle
+phi 0.0 22.5 45. 90. 180  # Output azimuth angles
+altitude 0.0              # ground altitude
+#zout 0.0                 # output altitude in km
+zout 0.5                # output altitude in km
+slit_function_file ../examples/TRI_SLIT.DAT
+                         # Location of slit function
+#spline 400 440 1         # Interpolate from first to last in step
+spline 400 440 1         # Interpolate from first to last in step
+quiet

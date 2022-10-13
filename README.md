@@ -11,7 +11,7 @@ Clone and `cd` to the project directory.
 
 Build the container:
 
-`docker build -t libRadtran-container .`
+`docker build -t libradtran-container .`
 
 ## Usage
 
@@ -23,7 +23,7 @@ Start the container interactively with:
 
 Start the container interactively with a volume mount (expects the directory `./Mount`): 
 
-`docker run -v "$(pwd)"/Mount:/libRadtran-2.0.4/Mount -it libRadtran-container bash`
+`docker run -v "$(pwd)"/Mount:/libRadtran-2.0.4/Mount -it libradtran-container bash`
 
 ### Running `uvspec`
 

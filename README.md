@@ -29,4 +29,6 @@ Start the container interactively with a volume mount (expects the directory `./
 
 Simply type `uvspec`. The default working directory is `/libRadtran-2.0.4` and `uvspec` is already added to the PATH.
 
+Example: `uvspec < UVSPEC_EXAMPLE.INP > UVSPEC_EXAMPLE.OUT`
+
 Detailed `uvspec` usage is covered in the [libRadtran documentation](http://www.libradtran.org/doku.php?id=basic_usage).

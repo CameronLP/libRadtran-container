@@ -1,7 +1,7 @@
 
 # libRadtran-container
 
-A containerized version of libRadtran.
+A containerized version of [libRadtran](http://www.libradtran.org).
 
 ## Setup
 
